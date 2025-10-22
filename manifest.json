@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Tidal Cleaner",
+  "version": "1.0",
+  "description": "Remove unwanted sections from Tidal pages.",
+  "content_scripts": [
+    {
+      "matches": ["*://*.tidal.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "permissions": ["scripting", "activeTab"]
+}
